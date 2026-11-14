@@ -1,0 +1,6 @@
+# ADD these packages to the EXISTING Bitcoin requirements.txt as needed.
+# Do not remove any existing packages (especially those used by app.py).
+streamlit>=1.41,<2
+streamlit-autorefresh>=1.0.1
+requests>=2.31,<3
+pandas>=2.1,<3
