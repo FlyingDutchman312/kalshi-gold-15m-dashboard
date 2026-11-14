@@ -1,0 +1,6 @@
+FROM python:3.11-slim
+WORKDIR /bot
+COPY requirements_gold.txt ./
+RUN pip install --no-cache-dir "requests>=2.31,<3"
+COPY gold_core.py gold_worker.py ./
+CMD ["python", "gold_worker.py"]
